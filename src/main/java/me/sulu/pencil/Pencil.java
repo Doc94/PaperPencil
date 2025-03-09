@@ -16,6 +16,7 @@ import discord4j.gateway.intent.IntentSet;
 import discord4j.rest.util.AllowedMentions;
 import me.sulu.pencil.commands.Docs;
 import me.sulu.pencil.commands.Google;
+import me.sulu.pencil.commands.JavaDocs;
 import me.sulu.pencil.commands.Modmail;
 import me.sulu.pencil.listeners.*;
 import me.sulu.pencil.manager.CommandManager;
@@ -74,7 +75,8 @@ public class Pencil {
     new CommandManager(this, Set.of(
       new Google(this),
       new Modmail(this),
-      new Docs(this)
+      new Docs(this),
+      new JavaDocs(this)
     ));
 
     new ListenerManager(Set.of(

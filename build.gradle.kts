@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-  implementation("com.discord4j", "discord4j-core", "3.3.0-RC1") {
+  implementation("com.discord4j", "discord4j-core", "3.3.0-20250308.140310-171") {
     exclude("com.fasterxml")
     exclude("com.github.ben-manes.caffeine")
   }
@@ -37,6 +37,8 @@ dependencies {
   implementation("com.github.ben-manes.caffeine", "caffeine", "3.1.8")
 
   implementation("com.github.anyascii", "anyascii", "0.3.2")
+
+  implementation("org.jsoup:jsoup:1.19.1")
 }
 
 tasks {
